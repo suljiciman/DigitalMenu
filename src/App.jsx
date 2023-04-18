@@ -1,12 +1,11 @@
-import MenuItem from "./components/MenuItem";
-import {menu} from "./data/list";
-import Menu from "./components/Menu";
+
+import MenuPage from "./pages/MenuPage";
 
 
 function App() {
   return (
     <div>
-      <Menu menu={menu}/>
+      <MenuPage/>
       </div>
   
   )

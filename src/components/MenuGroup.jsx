@@ -8,9 +8,8 @@ const MenuGroup = ({menuGroup}) => {
 })
     return(
        
-        <div>
-           
-            {menuItemList}
+        <div>     
+        {menuItemList}
         </div>
     )
 }
