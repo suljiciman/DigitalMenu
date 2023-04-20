@@ -1,14 +1,15 @@
 import React from "react";
 import MenuGroup from "./MenuGroup";
 
-const Menu = ({menu}) => {
 
-const menuElement = menu.map((menuGroup) => {
-    return <MenuGroup key={menuGroup.id} menuGroup={menuGroup}/>
-})
+const Menu = ({menu}) => {
+    const menuElement = menu.map((menuGroup) => {
+        return (
+        <MenuGroup menuGroup={menuGroup}/>
+        )
+    })
     return(
-        <div>
-            
+        <div>     
             {menuElement}
         </div>
     )
