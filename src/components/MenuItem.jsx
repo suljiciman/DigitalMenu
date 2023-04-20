@@ -12,13 +12,12 @@ const MenuItem = ({item}) => {
         setShowItemDetail(false)
     }
 return (
-    <div>
-        {showItemDetail && <ItemDetail description={item.description} onClose={closeItemDetailHandler} imgUrl={item.imgUrl}/>}
-        <button onClick={showDetailHandler} onClose={closeItemDetailHandler}>
+    <div onClick={showDetailHandler} onClose={closeItemDetailHandler}>
+        {showItemDetail && <ItemDetail description={item.description} onClose={closeItemDetailHandler} imgUrl={item.imgUrl}/>}  
         <h1>{item.title}</h1>
         <h1>{item.price} KM</h1>
         <h3>{item.ingredients}</h3>
-        </button>
+        
     </div>  
 )
 }
